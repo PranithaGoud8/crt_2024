@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class SumOfFactorialDigits {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        int n = s.nextInt();
+        int sumFactorials = sumOfFactorialDigits(n);
+        System.out.println(sumFactorials);
+    }
+    
+    public static int sumOfFactorialDigits(int n) {
+        String numStr = Integer.toString(n);
+        int sum = 0;
+        
+        for (int i = 0; i < numStr.length(); i++) {
+            int digit = Character.getNumericValue(numStr.charAt(i));
+            sum += factorial(digit);
+        }
+        
+        return sum;
+    }
+    
+    public static int factorial(int num) {
+        if (num == 0 || num == 1) {
+            return 1;
+        }
+        int fact = 1;
+        for (int i = 2; i <= num; i++) {
+            fact *= i;
+        }
+        return fact;
+    }
+}
