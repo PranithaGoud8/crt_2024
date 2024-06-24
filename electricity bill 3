@@ -1,0 +1,22 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        int u=s.nextInt();
+        double r1;
+        if(u<=200)
+          r1=(u*0.5);
+        else if(u>200 && u<=400)
+            r1=(u*0.65)+100;
+        else if(u>400 && u<=600)
+            r1=(u*0.80)+200;
+        else 
+            r1=(u*1.25)+425;
+         System.out.printf("Rs.%.0f",r1);
+    
+        
+    }
+}
