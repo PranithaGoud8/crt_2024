@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class Test {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        long billAmount = scanner.nextLong();
+        scanner.close();
+        int discount = calculateDiscount(billAmount);
+        System.out.println(discount);
+    }
+    public static int calculateDiscount(long billAmount) {
+        int discount = 0;
+      String billStr = Long.toString(billAmount);
+
+        for (int i = 0; i < billStr.length(); i++) {
+            char digitChar = billStr.charAt(i);
+            int digit = Character.getNumericValue(digitChar);
+            if (digit % 2 != 0) {
+                discount += digit;
+            }
+        }
+
+        return discount;
+    }
+}
