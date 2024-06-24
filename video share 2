@@ -1,0 +1,30 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        int r=s.nextInt();
+    if(r>=30&&r<=50)
+    {
+        System.out.println("Average");
+    }
+    if(r>=51&&r<=60)
+    {
+        System.out.println("Good");
+    }
+    if(r>=61&&r<=80)
+    {
+        System.out.println("Excellent");
+    }
+    if(r>=81&&r<=100)
+    {
+        System.out.println("Outstanding");
+    }
+    if(r<30||r>100)
+    {
+        System.out.println("Invalid Input");
+    }
+    }
+}
