@@ -1,0 +1,29 @@
+import java.io.*;
+import java.util.*;
+public class Solution {
+    public static void main(String[] args) 
+    {
+        Scanner s=new Scanner(System.in);
+        int n=s.nextInt();
+        int d,bin=0,base=1;
+        while(n>0)
+        {
+            d=n%2;
+            n=n/2;
+            bin=bin+base*d;
+            base=base*10;
+        }
+        int t=bin,rev=0;
+        while(t>0)
+        {
+            int d1=t%10;
+            rev=rev*10+d1;
+            t=t/10;
+        }
+        if(rev==bin)
+            System.out.print("yes");
+        else 
+            System.out.print("no");
+    }
+    
+}
