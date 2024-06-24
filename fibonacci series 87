@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class FibonacciSequence {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        int n = s.nextInt();
+        int result = findNthFibonacci(n);
+        System.out.println(result);
+    }
+    
+    public static int findNthFibonacci(int n) {
+        if (n == 1 || n == 2) {
+            return 1; 
+        }
+        
+        int a = 1; 
+        int b = 1; 
+        
+        for (int i = 3; i <= n; i++) {
+            int next = a + b;
+            a = b;
+            b = next;
+        }
+        
+        return b; 
+    }
+}
