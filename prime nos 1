@@ -1,0 +1,29 @@
+import java.util.Scanner;
+public class Test {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        int start = s.nextInt();
+        int end = s.nextInt();
+        if (start <= 1) {
+            start = 2; 
+        }
+        boolean[] isPrime = new boolean[end + 1]; 
+        for (int i = 2; i <= end; i++) {
+            isPrime[i] = true;
+        }
+        for (int p = 2; p * p <= end; p++) {
+            if (isPrime[p]) {
+                for (int i = p * p; i <= end; i += p) {
+                    isPrime[i] = false; 
+                }
+            }
+        }
+        StringBuilder result = new StringBuilder();
+        for (int i = start; i <= end; i++) {
+            if (isPrime[i]) {
+                result.append(i).append(" ");
+            }
+        }
+                System.out.println(result.toString().trim());
+    }
+}
