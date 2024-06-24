@@ -1,0 +1,25 @@
+import java.io.*;
+import java.util.*;
+public class Solution
+{
+    public static void main(String[] args)
+    {
+        Scanner s=new Scanner(System.in);
+        int n,k,i,c=0;
+        n=s.nextInt();
+        k=s.nextInt();
+        for(i=n;i>0;i--)
+        {
+            if(n%i==0)
+                c++;
+            if(c==k)
+            {
+                break;
+            }
+        }
+        if(c!=k)
+            System.out.println(1);
+        else
+            System.out.println(i);
+    }
+}
