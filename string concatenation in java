@@ -1,0 +1,12 @@
+import java.util.*;
+import java.io.*;
+class Ex9
+ {
+    public static void main(String[] args)
+ {
+         String str1="Pranitha";
+String str2="Soft";
+String str3=str1+str2;
+System.out.println(str3);
+}
+}
