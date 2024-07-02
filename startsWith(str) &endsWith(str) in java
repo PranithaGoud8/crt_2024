@@ -1,0 +1,16 @@
+import java.io.*;
+import java.util.Scanner;
+class Test16
+{
+public static void main(String args[])
+{
+Scanner s=new Scanner(System.in);
+String str="Java is simple language";
+System.out.println(str.contains("Simple"));
+System.out.println(str.contains("Python"));
+System.out.println(str.contains("lan"));
+System.out.println(str.contains("J"));
+System.out.println(str.contains("A"));
+System.out.println(str.contains("age"));
+}
+}
