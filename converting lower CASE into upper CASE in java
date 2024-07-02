@@ -1,0 +1,11 @@
+import java.util.*;
+class LowerUpperCase
+{
+public static void main(String args[])
+{
+Scanner s=new Scanner(System.in);
+String str="Java Is Simple Language";
+System.out.println(str.toLowerCase());
+System.out.println(str.toUpperCase());
+}
+}
