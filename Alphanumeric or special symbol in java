@@ -1,0 +1,17 @@
+import java.util.*;
+class AlphaNumeric
+{
+public static void main(String args[])
+{
+Scanner s=new Scanner(System.in);
+char ch=s.next().charAt(0);
+if(Character.isLetterOrDigit(ch))
+{
+System.out.println("Alpha-Numeric");
+}
+else
+{
+System.out.println("Special Symbol");
+}
+}
+}
