@@ -1,0 +1,14 @@
+import java.util.*;
+class Test21
+{
+public static void main(String args[])
+{
+Scanner s=new Scanner(System.in);
+String str1="Java";
+String str2="Language";
+System.out.println(str1);
+System.out.println(str2);
+str1.concat(str2);
+System.out.println(str1);
+}
+}
