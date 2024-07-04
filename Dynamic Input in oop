@@ -1,0 +1,24 @@
+import java.util.*;
+class Student1 {
+    int admno=11;
+    String name;
+    void get()
+    {
+        Scanner s=new Scanner(System.in);
+        System.out.println("Enter admno,name");
+        admno=s.nextInt();
+        name=s.next();
+    }
+    void show()
+    {
+        System.out.println(admno+" "+name);
+    }
+    public static void main(String[] args) {
+        Student1 s1=new Student1();
+        s1.get();
+        s1.show();
+        Student1 s2=new Student1();
+        s2.get();
+        s2.show();
+    }
+}
