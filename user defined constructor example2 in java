@@ -1,0 +1,25 @@
+import java.io.*;
+class Student
+{
+int admno;
+String name;
+Student(int x,String y)
+{
+admno=x;
+name=y;
+}
+void show()
+{
+System.out.println(admno+" "+name);
+}
+}
+class Test08
+{
+public static void main(String args[])
+{
+Student s1=new Student(111,"ppp");
+s1.show();
+Student s2=new Student(222,"ddd");
+s2.show();
+}
+} 
