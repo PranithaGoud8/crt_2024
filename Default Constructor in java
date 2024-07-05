@@ -1,0 +1,13 @@
+import java.io.*;
+class Test06
+{
+void show()
+{
+System.out.println("Show Method");
+}
+public static void main(String args[])
+{
+Test06 t1=new Test06();
+t1.show();
+}
+} 
