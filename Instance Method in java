@@ -1,0 +1,16 @@
+import java.io.*;
+class Sample
+{
+void m1()
+{
+System.out.println("Instance Method");
+}
+}
+class Test09
+{
+public static void main(String args[])
+{
+Sample s1=new Sample();
+s1.m1();
+}
+}
