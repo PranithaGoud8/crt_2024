@@ -1,0 +1,19 @@
+import java.io.*;
+class Test07
+{
+void show()
+{
+System.out.println("Show Method");
+}
+Test07()
+{
+System.out.println("Constructor");
+}
+public static void main(String args[])
+{
+Test07 t1=new Test07();
+Test07 t2=new Test07();
+t1.show();
+t2.show();
+}
+} 
