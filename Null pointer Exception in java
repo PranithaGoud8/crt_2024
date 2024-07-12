@@ -1,0 +1,9 @@
+import java.util.*;
+class Testtt1
+{
+public static void main(String[] args)
+{
+Date d=null;
+System.out.println(d);
+}
+}
